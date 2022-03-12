@@ -50,10 +50,10 @@ namespace MyPhoneBook
             this.dgrMain.AllowUserToDeleteRows = false;
             this.dgrMain.AllowUserToResizeRows = false;
             this.dgrMain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgrMain.Location = new System.Drawing.Point(12, 65);
+            this.dgrMain.Location = new System.Drawing.Point(12, 73);
             this.dgrMain.MultiSelect = false;
             this.dgrMain.Name = "dgrMain";
-            this.dgrMain.Size = new System.Drawing.Size(776, 339);
+            this.dgrMain.Size = new System.Drawing.Size(796, 331);
             this.dgrMain.TabIndex = 4;
             this.dgrMain.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgrMain_CellDoubleClick);
             this.dgrMain.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgrMain_ColumnHeaderMouseClick);
@@ -77,48 +77,56 @@ namespace MyPhoneBook
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(63, 36);
+            this.btnSearch.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnSearch.ForeColor = System.Drawing.Color.White;
+            this.btnSearch.Location = new System.Drawing.Point(16, 36);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(135, 23);
+            this.btnSearch.Size = new System.Drawing.Size(135, 30);
             this.btnSearch.TabIndex = 7;
-            this.btnSearch.Text = "Find Contact";
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Text = "&Find Contact";
+            this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnAdd
             // 
+            this.btnAdd.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
             this.btnAdd.Location = new System.Drawing.Point(12, 449);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(111, 23);
+            this.btnAdd.Size = new System.Drawing.Size(135, 30);
             this.btnAdd.TabIndex = 8;
             this.btnAdd.Text = "Add &New Contact";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(129, 449);
+            this.btnEdit.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnEdit.ForeColor = System.Drawing.Color.White;
+            this.btnEdit.Location = new System.Drawing.Point(153, 449);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(111, 23);
+            this.btnEdit.Size = new System.Drawing.Size(135, 30);
             this.btnEdit.TabIndex = 9;
             this.btnEdit.Text = "&Modify Contact";
-            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click_1);
             // 
             // btnRemove
             // 
-            this.btnRemove.Location = new System.Drawing.Point(677, 449);
+            this.btnRemove.BackColor = System.Drawing.Color.DarkRed;
+            this.btnRemove.ForeColor = System.Drawing.Color.White;
+            this.btnRemove.Location = new System.Drawing.Point(673, 449);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(111, 23);
+            this.btnRemove.Size = new System.Drawing.Size(135, 30);
             this.btnRemove.TabIndex = 10;
             this.btnRemove.Text = "&Remove Contact";
-            this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.UseVisualStyleBackColor = false;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click_1);
             // 
             // lblCaptionTotal
             // 
             this.lblCaptionTotal.AutoSize = true;
-            this.lblCaptionTotal.Location = new System.Drawing.Point(659, 41);
+            this.lblCaptionTotal.Location = new System.Drawing.Point(678, 57);
             this.lblCaptionTotal.Name = "lblCaptionTotal";
             this.lblCaptionTotal.Size = new System.Drawing.Size(70, 13);
             this.lblCaptionTotal.TabIndex = 11;
@@ -127,7 +135,7 @@ namespace MyPhoneBook
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(727, 41);
+            this.lblTotal.Location = new System.Drawing.Point(746, 57);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(19, 13);
             this.lblTotal.TabIndex = 12;
@@ -156,19 +164,21 @@ namespace MyPhoneBook
             // 
             // btnResetSearch
             // 
-            this.btnResetSearch.Location = new System.Drawing.Point(204, 36);
+            this.btnResetSearch.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnResetSearch.ForeColor = System.Drawing.Color.White;
+            this.btnResetSearch.Location = new System.Drawing.Point(157, 37);
             this.btnResetSearch.Name = "btnResetSearch";
-            this.btnResetSearch.Size = new System.Drawing.Size(135, 23);
+            this.btnResetSearch.Size = new System.Drawing.Size(135, 30);
             this.btnResetSearch.TabIndex = 15;
-            this.btnResetSearch.Text = "Reset Search";
-            this.btnResetSearch.UseVisualStyleBackColor = true;
+            this.btnResetSearch.Text = "Reset &Search";
+            this.btnResetSearch.UseVisualStyleBackColor = false;
             this.btnResetSearch.Click += new System.EventHandler(this.btnResetSearch_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 483);
+            this.ClientSize = new System.Drawing.Size(825, 490);
             this.Controls.Add(this.btnResetSearch);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblInstruction);

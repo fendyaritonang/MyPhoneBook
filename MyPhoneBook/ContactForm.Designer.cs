@@ -97,12 +97,14 @@ namespace MyPhoneBook
             // 
             // btnAction
             // 
+            this.btnAction.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnAction.ForeColor = System.Drawing.Color.White;
             this.btnAction.Location = new System.Drawing.Point(16, 112);
             this.btnAction.Name = "btnAction";
             this.btnAction.Size = new System.Drawing.Size(431, 35);
             this.btnAction.TabIndex = 3;
             this.btnAction.Text = "ACTION";
-            this.btnAction.UseVisualStyleBackColor = true;
+            this.btnAction.UseVisualStyleBackColor = false;
             this.btnAction.Click += new System.EventHandler(this.btnAction_Click);
             // 
             // errorProvider
